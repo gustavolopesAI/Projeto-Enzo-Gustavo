@@ -3,404 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatWing AI - Pare de Perder Clientes Às 2h da Manhã</title>
-    <meta name="description" content="ChatWing responde seus clientes 24/7, agenda reuniões e fecha vendas enquanto você dorme. Aumente suas vendas em 40% sem contratar funcionários.">
+    <title>ChatWing AI - A Calma de Saber Que Nenhum Cliente Fica Sem Resposta</title>
+    <meta name="description" content="ChatWing é a inteligência artificial que cuida do seu atendimento, para que você possa focar no que realmente importa.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Urgency Banner -->
-    <div class="urgency-banner">
-        <div class="container">
-            <div class="urgency-content">
-                <span class="urgency-text">🔥 Apenas 50 vagas restantes para o setup gratuito este mês</span>
-                <div class="countdown-timer">
-                    <span id="countdown">23:59:45</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Header -->
+     Header 
     <header class="header">
         <div class="container">
-            <div class="nav">
+            <div class="header-content">
                 <div class="logo">
-                    <h2>ChatWing AI</h2>
+                    <h1>ChatWing</h1>
                 </div>
-                <div class="nav-links">
-                    <a href="#features">Recursos</a>
-                    <a href="#testimonials">Depoimentos</a>
-                    <a href="#pricing">Preços</a>
-                    <button class="cta-button-small">Começar Grátis</button>
-                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="features.html" class="nav-link">Features</a></li>
+                        <li><a href="pricing.html" class="nav-link">Preços</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="cta-button">Comece Grátis</a>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+     Hero Section 
+    <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-headline">Pare de Perder Clientes Às 2h da Manhã</h1>
-                    <p class="hero-subheadline">ChatWing responde seus clientes 24/7, agenda reuniões e fecha vendas enquanto você dorme</p>
-                    <div class="value-proposition">
-                        <span class="value-text">Aumente suas vendas em 40% sem contratar funcionários</span>
-                    </div>
-                    <div class="hero-cta">
-                        <button class="cta-button-primary">Comece Grátis Agora</button>
-                        <p class="cta-subtitle">Setup gratuito + 30 dias de teste + eBook sobre automação</p>
-                    </div>
-                    <div class="trust-indicators">
-                        <div class="trust-item">
-                            <span class="trust-number">1.200+</span>
-                            <span class="trust-text">Negócios confiam</span>
-                        </div>
-                        <div class="trust-item">
-                            <span class="trust-number">87%</span>
-                            <span class="trust-text">Veem aumento no 1º mês</span>
-                        </div>
-                        <div class="trust-item">
-                            <span class="trust-number">98.4%</span>
-                            <span class="trust-text">Uptime garantido</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="chat-demo">
-                        <div class="chat-header">
-                            <div class="chat-status">
-                                <div class="status-dot"></div>
-                                <span>ChatWing Online</span>
-                            </div>
-                        </div>
-                        <div class="chat-messages">
-                            <div class="message customer">
-                                <p>Olá, vocês atendem aos sábados?</p>
-                                <span class="time">23:47</span>
-                            </div>
-                            <div class="message bot">
-                                <p>Olá! Sim, atendemos aos sábados das 8h às 18h. Gostaria de agendar um horário?</p>
-                                <span class="time">23:47</span>
-                            </div>
-                            <div class="message customer">
-                                <p>Sim, preciso para amanhã de manhã</p>
-                                <span class="time">23:48</span>
-                            </div>
-                            <div class="message bot">
-                                <p>Perfeito! Tenho disponibilidade às 9h, 10h30 e 14h. Qual horário prefere?</p>
-                                <span class="time">23:48</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h1 class="hero-headline">A Calma de Saber Que Nenhum Cliente Fica Sem Resposta.</h1>
+                <p class="hero-subheadline">ChatWing é a inteligência artificial que cuida do seu atendimento, para que você possa focar no que realmente importa.</p>
+                <a href="#how-it-works" class="primary-cta">Veja Como Funciona</a>
             </div>
         </div>
     </section>
 
-    <!-- Problem Section -->
-    <section class="problem-section">
+     How It Works Section 
+    <section class="how-it-works" id="how-it-works">
         <div class="container">
-            <h2 class="section-title">Você Está Perdendo Dinheiro Toda Noite</h2>
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">😴</div>
-                    <h3>Clientes desistem porque ninguém responde fora do horário comercial</h3>
-                    <p>Seus concorrentes estão capturando esses leads perdidos</p>
+            <h2 class="section-title">Simplicidade em Três Passos</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Conecte" loading="lazy">
+                    </div>
+                    <h3 class="step-title">1. Conecte</h3>
+                    <p class="step-description">Integre ao seu WhatsApp ou site em menos de 5 minutos.</p>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">⚡</div>
-                    <h3>Você perde vendas para concorrentes que respondem mais rápido</h3>
-                    <p>80% dos clientes escolhem quem responde primeiro</p>
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Personalize" loading="lazy">
+                    </div>
+                    <h3 class="step-title">2. Personalize</h3>
+                    <p class="step-description">Ensine sua IA a responder com o tom e as informações da sua marca.</p>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">💸</div>
-                    <h3>Contratar atendentes 24h custa mais de $4.000/mês</h3>
-                    <p>Sem contar benefícios, treinamento e rotatividade</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🔄</div>
-                    <h3>Perguntas repetitivas consomem todo seu tempo produtivo</h3>
-                    <p>Você deveria estar focando no crescimento do negócio</p>
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Relaxe" loading="lazy">
+                    </div>
+                    <h3 class="step-title">3. Relaxe</h3>
+                    <p class="step-description">Deixe o ChatWing qualificar leads e agendar reuniões 24/7.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Solution Section -->
-    <section class="solution-section" id="features">
+     Main Testimonial Section 
+    <section class="main-testimonial">
         <div class="container">
-            <h2 class="section-title">Conheça Seu Novo Funcionário Que Nunca Pede Aumento</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🌙</div>
-                    <h3>Atendimento 24/7 Inteligente</h3>
-                    <p>Responde clientes instantaneamente, qualquer hora do dia</p>
-                    <div class="feature-benefit">
-                        <span class="benefit-tag">Resultado: Nunca mais perca um lead</span>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📅</div>
-                    <h3>Agenda Reuniões Automaticamente</h3>
-                    <p>Integra com seu calendário e confirma horários sozinho</p>
-                    <div class="feature-benefit">
-                        <span class="benefit-tag">Resultado: 60% mais agendamentos</span>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Qualifica Leads Automaticamente</h3>
-                    <p>Identifica clientes prontos para comprar e os prioriza</p>
-                    <div class="feature-benefit">
-                        <span class="benefit-tag">Resultado: 40% mais conversões</span>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🧠</div>
-                    <h3>Aprende Seu Negócio</h3>
-                    <p>Fica mais inteligente a cada conversa</p>
-                    <div class="feature-benefit">
-                        <span class="benefit-tag">Resultado: Atendimento personalizado</span>
+            <div class="testimonial-content">
+                <blockquote class="testimonial-quote">
+                    "Desde que implementamos o ChatWing, nossa taxa de resposta caiu para segundos e eu recuperei minhas noites de sono. É uma ferramenta essencial, não um luxo."
+                </blockquote>
+                <div class="testimonial-author">
+                    <img src="/placeholder.svg?height=60&width=60" alt="Maria Silva" class="author-avatar" loading="lazy">
+                    <div class="author-info">
+                        <cite class="author-name">Maria Silva</cite>
+                        <p class="author-business">Fundadora da Soluções Criativas</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section" id="testimonials">
-        <div class="container">
-            <h2 class="section-title">O Que Nossos Clientes Estão Dizendo</h2>
-            <div class="testimonials-carousel">
-                <div class="testimonial-card active">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face" alt="Sarah Mitchell">
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>Sarah Mitchell</h4>
-                            <p>Mitchell's Hair Studio, Dallas TX</p>
-                            <div class="stars">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <blockquote>"ChatWing aumentou meus agendamentos em 60% no primeiro mês. Agora meus clientes podem marcar horário até às 3h da manhã!"</blockquote>
-                    <div class="testimonial-result">
-                        <span class="result-highlight">60% mais agendamentos</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Marcus Rodriguez">
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>Marcus Rodriguez</h4>
-                            <p>Rodriguez Landscaping, Phoenix AZ</p>
-                            <div class="stars">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <blockquote>"Antes eu perdia 3-4 orçamentos por semana porque não conseguia responder rápido. Agora o ChatWing responde em segundos e já agenda a visita."</blockquote>
-                    <div class="testimonial-result">
-                        <span class="result-highlight">$15k em vendas extras no primeiro mês</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=80&h=80&fit=crop&crop=face" alt="Jennifer Park">
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>Jennifer Park</h4>
-                            <p>Park Family Dentistry, Seattle WA</p>
-                            <div class="stars">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <blockquote>"Nossos pacientes adoram poder agendar consultas pelo WhatsApp a qualquer hora. Reduzimos faltas em 80%."</blockquote>
-                    <div class="testimonial-result">
-                        <span class="result-highlight">80% menos no-shows</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="David Thompson">
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>David Thompson</h4>
-                            <p>Thompson Auto Repair, Miami FL</p>
-                            <div class="stars">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <blockquote>"O ChatWing responde perguntas sobre preços e disponibilidade automaticamente. Economizo 3 horas por dia!"</blockquote>
-                    <div class="testimonial-result">
-                        <span class="result-highlight">3 horas economizadas diariamente</span>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-dots">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
-                <span class="dot" data-slide="3"></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing-section" id="pricing">
-        <div class="container">
-            <h2 class="section-title">Escolha Seu Plano de Crescimento</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="plan-header">
-                        <h3>Starter</h3>
-                        <p class="plan-description">Para negócios iniciantes</p>
-                    </div>
-                    <div class="plan-price">
-                        <span class="price">$47</span>
-                        <span class="period">/mês</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li>✅ Até 500 conversas/mês</li>
-                        <li>✅ Integração WhatsApp Business</li>
-                        <li>✅ Respostas automáticas básicas</li>
-                        <li>✅ Suporte por email</li>
-                    </ul>
-                    <button class="plan-cta">Começar Grátis</button>
-                </div>
-
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Mais Escolhido</div>
-                    <div class="plan-header">
-                        <h3>Professional</h3>
-                        <p class="plan-description">Mais escolhido pelos nossos clientes</p>
-                    </div>
-                    <div class="plan-price">
-                        <span class="price">$147</span>
-                        <span class="period">/mês</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li>✅ Conversas ilimitadas</li>
-                        <li>✅ Agendamento automático</li>
-                        <li>✅ Qualificação de leads</li>
-                        <li>✅ Integração com CRM</li>
-                        <li>✅ Analytics avançados</li>
-                        <li>✅ Suporte prioritário 24/7</li>
-                    </ul>
-                    <button class="plan-cta primary">Teste 30 Dias Grátis</button>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="plan-header">
-                        <h3>Enterprise</h3>
-                        <p class="plan-description">Para negócios em crescimento acelerado</p>
-                    </div>
-                    <div class="plan-price">
-                        <span class="price">$297</span>
-                        <span class="period">/mês</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li>✅ Tudo do Professional</li>
-                        <li>✅ IA personalizada para seu negócio</li>
-                        <li>✅ Múltiplas integrações</li>
-                        <li>✅ Relatórios customizados</li>
-                        <li>✅ Onboarding dedicado</li>
-                        <li>✅ Suporte telefônico exclusivo</li>
-                    </ul>
-                    <button class="plan-cta">Falar com Especialista</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Guarantee Section -->
-    <section class="guarantee-section">
-        <div class="container">
-            <div class="guarantee-content">
-                <div class="guarantee-icon">🛡️</div>
-                <h2>Garantia Blindada de 60 Dias</h2>
-                <p>Se o ChatWing não aumentar seus leads em pelo menos 25% nos primeiros 60 dias, devolvemos 100% do seu dinheiro. Sem perguntas, sem complicação.</p>
-                <div class="risk-reversal">
-                    <strong>O risco é todo nosso. Você só tem a ganhar.</strong>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="final-cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Pare de Perder Clientes Hoje Mesmo</h2>
-                <p>Junte-se a mais de 2.500 negócios que já automatizaram seu atendimento</p>
-                <button class="cta-button-primary large">Comece Grátis Agora</button>
-                <p class="cta-subtitle">Setup gratuito + 30 dias de teste + eBook sobre automação</p>
-                <div class="trust-badges">
-                    <span class="badge">🔒 SSL Certificado</span>
-                    <span class="badge">🛡️ GDPR Compliant</span>
-                    <span class="badge">⚡ 99.9% Uptime</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+     Footer 
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>ChatWing AI</h3>
-                    <p>O assistente de IA que nunca dorme</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Produto</h4>
-                        <a href="#features">Recursos</a>
-                        <a href="#pricing">Preços</a>
-                        <a href="#">Integrações</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Suporte</h4>
-                        <a href="#">Central de Ajuda</a>
-                        <a href="#">Contato</a>
-                        <a href="#">Status</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Empresa</h4>
-                        <a href="#">Sobre</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Carreiras</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 ChatWing AI. Todos os direitos reservados.</p>
+                <p class="footer-copyright">© 2024 ChatWing</p>
+                <nav class="footer-nav">
+                    <a href="#" class="footer-link">Política de Privacidade</a>
+                    <a href="#" class="footer-link">Termos de Uso</a>
+                    <a href="#" class="footer-link">Contato</a>
+                </nav>
             </div>
         </div>
     </footer>
-
-    <!-- Lead Capture Modal -->
-    <div id="leadModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3>Comece Grátis Agora</h3>
-            <p>Receba seu setup gratuito + 30 dias de teste + eBook sobre automação</p>
-            <form id="leadForm" class="lead-form">
-                <input type="text" id="name" placeholder="Seu nome completo" required>
-                <input type="email" id="email" placeholder="Seu melhor email" required>
-                <input type="tel" id="phone" placeholder="WhatsApp para contato" required>
-                <input type="text" id="business" placeholder="Nome do seu negócio" required>
-                <button type="submit" class="form-submit">Começar Agora</button>
-            </form>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
