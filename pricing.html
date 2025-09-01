@@ -4,116 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preços - ChatWing AI</title>
-    <meta name="description" content="Um preço. Crescimento ilimitado. Nosso plano inclui tudo que você precisa para crescer, sem taxas escondidas.">
+    <meta name="description" content="Um preço. Crescimento ilimitado. Nosso plano inclui tudo que você precisa para crescer.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-     Header 
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html"><h1>ChatWing</h1></a>
-                </div>
-                <nav class="nav" id="nav">
-                    <ul class="nav-list">
-                        <li><a href="features.html" class="nav-link">Features</a></li>
-                        <li><a href="pricing.html" class="nav-link active">Preços</a></li>
-                    </ul>
-                </nav>
-                <a href="#" class="cta-button">Comece Grátis</a>
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">ChatWing</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Preços</a></li>
+                </ul>
+            </nav>
+            <a href="pricing.html" class="cta-button nav-cta">Comece Grátis</a>
+            <button class="mobile-nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </header>
 
-     Pricing Intro Section 
-    <section class="pricing-intro">
-        <div class="container">
-            <div class="intro-content">
-                <h1 class="page-title">Um Preço. Crescimento Ilimitado.</h1>
-                <p class="page-description">Acreditamos em simplicidade. Nosso plano inclui tudo que você precisa para crescer, sem taxas escondidas ou complexidade.</p>
+    <main>
+        <section id="pricing_intro" class="page-intro-section">
+            <div class="container text-center">
+                <h1 class="section-title">Um preço. Crescimento ilimitado.</h1>
+                <p class="section-subtitle">Acreditamos em simplicidade. Nosso plano inclui tudo que você precisa para crescer, sem taxas escondidas ou complexidade.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-     Pricing Plan Section 
-    <section class="pricing-plan">
-        <div class="container">
-            <div class="plan-card">
-                <h3 class="plan-name">ChatWing Pro</h3>
-                <div class="plan-price">$99<span class="price-period">/mês</span></div>
-                <p class="plan-description">Conversas ilimitadas, agendamentos ilimitados, integrações e suporte prioritário.</p>
-                <ul class="plan-features">
-                    <li>Atendimento 24/7</li>
-                    <li>Agendamento Inteligente</li>
-                    <li>Qualificação de Leads</li>
-                    <li>Base de Conhecimento</li>
-                    <li>Integração com CRM</li>
-                    <li>Suporte Premium</li>
+        <section id="pricing_plan" class="pricing-plan-section">
+            <div class="container">
+                <div class="pricing-card">
+                    <h2 class="plan-name">ChatWing Pro</h2>
+                    <p class="plan-price">$99<span class="price-period">/mês</span></p>
+                    <p class="plan-description">Conversas ilimitadas, agendamentos ilimitados, integrações e suporte prioritário.</p>
+                    <ul class="plan-features">
+                        <li>Atendimento 24/7</li>
+                        <li>Agendamento Inteligente</li>
+                        <li>Qualificação de Leads</li>
+                        <li>Base de Conhecimento</li>
+                        <li>Integração com CRM</li>
+                        <li>Suporte Premium</li>
+                    </ul>
+                    <a href="#" class="cta-button primary-cta">Comece Seu Teste de 14 Dias Grátis</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2 class="section-title text-center">Perguntas Frequentes</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>O processo de configuração é difícil?</span>
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Não. A maioria dos nossos clientes configura o ChatWing em menos de 10 minutos, sem precisar de conhecimento técnico.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Posso cancelar a qualquer momento?</span>
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim. Você pode cancelar sua assinatura a qualquer momento, sem burocracia.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>O ChatWing funciona com o meu software?</span>
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oferecemos integrações nativas com os principais CRMs e calendários do mercado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>© 2025 ChatWing</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
-                <a href="#" class="plan-cta">Comece Seu Teste de 14 Dias Grátis</a>
-            </div>
-        </div>
-    </section>
-
-     FAQ Section 
-    <section class="faq">
-        <div class="container">
-            <h2 class="section-title">Perguntas Frequentes</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        O processo de configuração é difícil?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Não. A maioria dos nossos clientes configura o ChatWing em menos de 10 minutos, sem precisar de conhecimento técnico.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Posso cancelar a qualquer momento?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Sim. Você pode cancelar sua assinatura a qualquer momento, sem burocracia.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        O ChatWing funciona com o meu software?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Oferecemos integrações nativas com os principais CRMs e calendários do mercado.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     Footer 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-copyright">© 2024 ChatWing</p>
-                <nav class="footer-nav">
-                    <a href="#" class="footer-link">Política de Privacidade</a>
-                    <a href="#" class="footer-link">Termos de Uso</a>
-                    <a href="#" class="footer-link">Contato</a>
-                </nav>
-            </div>
+            </nav>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>

@@ -3,110 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatWing AI - A Calma de Saber Que Nenhum Cliente Fica Sem Resposta</title>
+    <title>ChatWing AI - Atendimento Calmo e Eficiente</title>
     <meta name="description" content="ChatWing é a inteligência artificial que cuida do seu atendimento, para que você possa focar no que realmente importa.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
 </head>
 <body>
-     Header 
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1>ChatWing</h1>
-                </div>
-                <nav class="nav" id="nav">
-                    <ul class="nav-list">
-                        <li><a href="features.html" class="nav-link">Features</a></li>
-                        <li><a href="pricing.html" class="nav-link">Preços</a></li>
-                    </ul>
-                </nav>
-                <a href="#" class="cta-button">Comece Grátis</a>
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">ChatWing</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Preços</a></li>
+                </ul>
+            </nav>
+            <a href="pricing.html" class="cta-button nav-cta">Comece Grátis</a>
+            <button class="mobile-nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </header>
 
-     Hero Section 
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-headline">A Calma de Saber Que Nenhum Cliente Fica Sem Resposta.</h1>
-                <p class="hero-subheadline">ChatWing é a inteligência artificial que cuida do seu atendimento, para que você possa focar no que realmente importa.</p>
-                <a href="#how-it-works" class="primary-cta">Veja Como Funciona</a>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container text-center">
+                <h1 class="hero-title">A calma de saber que nenhum cliente fica sem resposta.</h1>
+                <p class="hero-subtitle">ChatWing é a inteligência artificial que cuida do seu atendimento, para que você possa focar no que realmente importa.</p>
+                <a href="features.html" class="cta-button primary-cta">Veja Como Funciona</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-     How It Works Section 
-    <section class="how-it-works" id="how-it-works">
-        <div class="container">
-            <h2 class="section-title">Simplicidade em Três Passos</h2>
-            <div class="steps-grid">
-                <div class="step">
-                    <div class="step-icon">
-                        <img src="/placeholder.svg?height=60&width=60" alt="Conecte" loading="lazy">
+        <section id="how_it_works" class="how-it-works-section">
+            <div class="container">
+                <h2 class="section-title text-center">Simplicidade em Três Passos</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Conecte</h3>
+                        <p>Integre ao seu WhatsApp ou site em menos de 5 minutos.</p>
                     </div>
-                    <h3 class="step-title">1. Conecte</h3>
-                    <p class="step-description">Integre ao seu WhatsApp ou site em menos de 5 minutos.</p>
-                </div>
-                <div class="step">
-                    <div class="step-icon">
-                        <img src="/placeholder.svg?height=60&width=60" alt="Personalize" loading="lazy">
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Personalize</h3>
+                        <p>Ensine sua IA a responder com o tom e as informações da sua marca.</p>
                     </div>
-                    <h3 class="step-title">2. Personalize</h3>
-                    <p class="step-description">Ensine sua IA a responder com o tom e as informações da sua marca.</p>
-                </div>
-                <div class="step">
-                    <div class="step-icon">
-                        <img src="/placeholder.svg?height=60&width=60" alt="Relaxe" loading="lazy">
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Relaxe</h3>
+                        <p>Deixe o ChatWing qualificar leads e agendar reuniões 24/7.</p>
                     </div>
-                    <h3 class="step-title">3. Relaxe</h3>
-                    <p class="step-description">Deixe o ChatWing qualificar leads e agendar reuniões 24/7.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-     Main Testimonial Section 
-    <section class="main-testimonial">
-        <div class="container">
-            <div class="testimonial-content">
-                <blockquote class="testimonial-quote">
-                    "Desde que implementamos o ChatWing, nossa taxa de resposta caiu para segundos e eu recuperei minhas noites de sono. É uma ferramenta essencial, não um luxo."
-                </blockquote>
-                <div class="testimonial-author">
-                    <img src="/placeholder.svg?height=60&width=60" alt="Maria Silva" class="author-avatar" loading="lazy">
-                    <div class="author-info">
-                        <cite class="author-name">Maria Silva</cite>
-                        <p class="author-business">Fundadora da Soluções Criativas</p>
-                    </div>
-                </div>
+        <section id="main_testimonial" class="testimonial-section">
+            <div class="container">
+                <figure>
+                    <blockquote>
+                        "Desde que implementamos o ChatWing, nossa taxa de resposta caiu para segundos e eu recuperei minhas noites de sono. É uma ferramenta essencial, não um luxo."
+                    </blockquote>
+                    <figcaption>
+                        <img src="https://via.placeholder.com/60" alt="Avatar de Maria Silva" class="testimonial-avatar">
+                        <div class="testimonial-author">
+                            <span class="author-name">Maria Silva</span>
+                            <span class="author-title">Fundadora da Soluções Criativas</span>
+                        </div>
+                    </figcaption>
+                </figure>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-     Footer 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-copyright">© 2024 ChatWing</p>
-                <nav class="footer-nav">
-                    <a href="#" class="footer-link">Política de Privacidade</a>
-                    <a href="#" class="footer-link">Termos de Uso</a>
-                    <a href="#" class="footer-link">Contato</a>
-                </nav>
-            </div>
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>© 2025 ChatWing</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
